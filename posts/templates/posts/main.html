@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body>
+<h1>
+    Have a good Day!
+</h1>
+<br>
+<a href='{% url "lovely:third" %}'>오늘의 글귀</a>
+    
+<br><br><br><br><br><br>    
+<h1>
+    오늘의 운세는?
+</h1>
+<br>
+<h2>
+    느낌으로 버튼 4개중에 하나를 골라서 눌러주세요!! 
+</h2>
+<br><br><br> 
+
+    <div class="menubtn">
+    <button type="button" id="order" class="btn btn-outline-danger btn-lg" onclick="location.href='https://djangodgu-inugh.run.goorm.io/lovely/first/' ">1번</button>&nbsp; &nbsp; &nbsp; &nbsp;
+    <br><br>
+    <button type="button" id="flavor_of_the_month" class="btn btn-outline-success btn-lg" onclick="location.href='https://djangodgu-inugh.run.goorm.io/lovely/first/' ">2번</button>&nbsp; &nbsp; &nbsp;
+    <br><br>
+    <button type="button" id="recommendation" class="btn btn-outline-info btn-lg" onclick="location.href='https://djangodgu-inugh.run.goorm.io/lovely/first/' ">3번</button>
+    <br><br>
+    <button type="button" id="list" class="btn btn-outline-secondary btn-lg" onclick="location.href='https://djangodgu-inugh.run.goorm.io/lovely/second/' ">4번</button>
+    </div>
+</body>
+<style>
+    body{
+        background: url(https://t1.daumcdn.net/cfile/tistory/2279C33C5818A6580B) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+        
+    }
+    a {
+  background-color: red;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+</style>
+{% endblock %}
